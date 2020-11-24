@@ -1,0 +1,38 @@
+.result {
+  width: 100%;
+}
+
+.result__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.result__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Oswald;
+  font-size: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.result__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.result__item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 400px;
+  text-align: center;
+}
