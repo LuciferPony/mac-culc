@@ -1,12 +1,14 @@
 section.forms
   .forms__wrapper
-    h2.forms__title Мак адреса
-    form(id="form")
-      ul(id="form").forms__list
-        li.forms__item
-          label.label Введите начальный адрес:
-            input.input-mac(type="text", id="mac")
-        li.forms__item
-          label.label Введите количество адресов:
-            input.input-quantity(type="text", id="quant")
-      button(type="submit").btn Отправить
+    .forms__container
+      h2.forms__title Мак адреса
+      h3.forms__subtitle Получить пул адресов:
+      form(id="form")
+        ul(id="form").forms__list
+          li.forms__item
+            label.label Начальный адрес:
+              input.input-mac(type="text", id="mac")
+          li.forms__item
+            label.label Количество адресов:
+              input.input-quantity(type="text", id="quant")
+        button(type="submit").btn Отправить

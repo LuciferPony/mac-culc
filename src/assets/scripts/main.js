@@ -17,13 +17,12 @@ form.onsubmit = function(event) {
   event.preventDefault()
 }
 
-form.onchange = function(event) {
+form.oninput = function(event) {
   checkNum()
 }
 
 let checkNum = function() {
   let str = num.value.replace(/\:/g, "")
-  console.log(str)
   document.getElementById('mac').value = str
 }
 
@@ -37,6 +36,8 @@ let toDec = function () {
 let count = function () {
   let quantity = Number(sum.value) + result
   let finalResult = quantity.toString(16).toUpperCase()
-  final.innerHTML = 'Пул адресов к выдаче: ' + num.value + ' ' + '-' + ' ' + finalResult
+  let endMac = finalResult.match(/.{1,2}/g).join(':')
+  let startMac = num.value.match(/.{1,2}/g).join(':')
+  final.innerHTML = 'Пул адресов к выдаче: ' + startMac + ' ' + '-' + ' ' + endMac
   return finalResult
 }
